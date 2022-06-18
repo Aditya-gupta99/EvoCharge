@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">EvoCharge</string>
+
+    <string name="please_wait">Please Wait</string>
+
+
+    <string-array name="option_list">
+        <item>Add Home Charging </item>
+        <item>Add Power Charging</item>
+        <item>Add EV Repair Shop</item>
+        <item>Add EV vehicles Parts</item>
+
+
+    </string-array>
+    <string name="title_activity_user">UserActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="title_activity_maps">MapsActivity</string>
+</resources>

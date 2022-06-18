@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "844541098573",
+    "project_id": "evocharge-625ae",
+    "storage_bucket": "evocharge-625ae.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:844541098573:android:3156f62ef14550fb0a7a04",
+        "android_client_info": {
+          "package_name": "com.sparklead.evocharge"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "844541098573-pl2p6lrj05gdet2gdfvf39qg6tl7u3nj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sparklead.evocharge",
+            "certificate_hash": "e7aaac6baf92d83284f5b159ead90daa707e207e"
+          }
+        },
+        {
+          "client_id": "844541098573-7l252l6gvgdc0tobbainitu5smbc8ccb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbm4M851Z9fRCOP2JfXSc0D0lnGEjxoco"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "844541098573-7l252l6gvgdc0tobbainitu5smbc8ccb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
