@@ -1,14 +1,12 @@
 package com.sparklead.evocharge.ui.activities
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import android.text.TextUtils
 import com.sparklead.evocharge.R
 import com.sparklead.evocharge.firestore.FirestoreClass
-import com.sparklead.evocharge.models.User
 import kotlinx.android.synthetic.main.activity_profile.*
 
 class ProfileActivity : BaseActivity() {
@@ -20,7 +18,7 @@ class ProfileActivity : BaseActivity() {
         setContentView(R.layout.activity_profile)
 
         if (flag){
-                val intent =Intent(this, UserActivity::class.java)
+                val intent =Intent(this, LoginActivity::class.java)
                 startActivity(intent)
         }
 
@@ -93,7 +91,7 @@ class ProfileActivity : BaseActivity() {
         showErrorSnackBar("profile updated successfully",false)
 
         Handler(Looper.getMainLooper()).postDelayed({
-            val intent = Intent(this, UserActivity::class.java)
+            val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
             overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
             finish()
