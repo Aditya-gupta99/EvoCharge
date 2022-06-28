@@ -5,20 +5,33 @@
       <map>
         <entry key="..\:/Users/91914/AndroidStudioProjects/EvoCharge/app/src/main/res/drawable-v24/button_background.xml" value="0.2265" />
         <entry key="..\:/Users/91914/AndroidStudioProjects/EvoCharge/app/src/main/res/drawable-v24/item_grey_border_background.xml" value="0.2265" />
+        <entry key="..\:/Users/91914/AndroidStudioProjects/EvoCharge/app/src/main/res/drawable/background_circular.xml" value="0.2265" />
         <entry key="..\:/Users/91914/AndroidStudioProjects/EvoCharge/app/src/main/res/drawable/ic_menu_slideshow.xml" value="0.2265" />
+        <entry key="..\:/Users/91914/AndroidStudioProjects/EvoCharge/app/src/main/res/layout-v28/fragment_home.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/91914/AndroidStudioProjects/EvoCharge/app/src/main/res/layout/activity_admin.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/91914/AndroidStudioProjects/EvoCharge/app/src/main/res/layout/activity_dashboard.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/91914/AndroidStudioProjects/EvoCharge/app/src/main/res/layout/activity_login.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/91914/AndroidStudioProjects/EvoCharge/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/91914/AndroidStudioProjects/EvoCharge/app/src/main/res/layout/activity_maps.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/91914/AndroidStudioProjects/EvoCharge/app/src/main/res/layout/activity_maps2.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/91914/AndroidStudioProjects/EvoCharge/app/src/main/res/layout/activity_otplogin.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/91914/AndroidStudioProjects/EvoCharge/app/src/main/res/layout/activity_profile.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/91914/AndroidStudioProjects/EvoCharge/app/src/main/res/layout/activity_report.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/91914/AndroidStudioProjects/EvoCharge/app/src/main/res/layout/activity_splash_screen.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/91914/AndroidStudioProjects/EvoCharge/app/src/main/res/layout/app_bar_dashboard.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/91914/AndroidStudioProjects/EvoCharge/app/src/main/res/layout/app_bar_user.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/91914/AndroidStudioProjects/EvoCharge/app/src/main/res/layout/app_bar_user2.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/91914/AndroidStudioProjects/EvoCharge/app/src/main/res/layout/content_dashboard.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/91914/AndroidStudioProjects/EvoCharge/app/src/main/res/layout/content_user.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/91914/AndroidStudioProjects/EvoCharge/app/src/main/res/layout/content_user2.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/91914/AndroidStudioProjects/EvoCharge/app/src/main/res/layout/dialog_progress.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/91914/AndroidStudioProjects/EvoCharge/app/src/main/res/layout/fragment_base.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/91914/AndroidStudioProjects/EvoCharge/app/src/main/res/layout/fragment_gallery.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/91914/AndroidStudioProjects/EvoCharge/app/src/main/res/layout/fragment_home.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/91914/AndroidStudioProjects/EvoCharge/app/src/main/res/layout/fragment_slideshow.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/91914/AndroidStudioProjects/EvoCharge/app/src/main/res/layout/nav_header_dashboard.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/91914/AndroidStudioProjects/EvoCharge/app/src/main/res/layout/nav_header_user.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/91914/AndroidStudioProjects/EvoCharge/app/src/main/res/menu/activity_user2_drawer.xml" value="0.25416666666666665" />
       </map>
     </option>
   </component>

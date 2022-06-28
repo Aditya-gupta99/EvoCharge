@@ -14,20 +14,43 @@
         android:theme="@style/Theme.EvoCharge"
         tools:targetApi="31">
 
+        <!--
+             TODO: Before you run your application, you need a Google Maps API key.
 
+             To get one, follow the directions here:
+
+                https://developers.google.com/maps/documentation/android-sdk/get-api-key
+
+             Once you have your API key (it starts with "AIza"), define a new property in your
+             project's local.properties file (e.g. MAPS_API_KEY=Aiza...), and replace the
+             "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyD1KAyH2AE-J32J_WR6FR_2xQndqNOu8l0" />
+
+        <activity
+            android:name=".ui.activities.MapActivity"
+            android:exported="false"
+            android:label="@string/title_activity_map" />
+        <activity
+            android:name=".ui.activities.ReportActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activities.DashboardActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.EvoCharge_2" />
         <activity
             android:name=".ui.activities.ProfileActivity"
-            android:theme="@style/Theme.EvoCharge_new"
-            android:exported="false" />
-
-        <activity
-            android:name=".ui.activities.UserActivity"
             android:exported="false"
-            android:label="@string/title_activity_user"
+            android:screenOrientation="portrait"
             android:theme="@style/Theme.EvoCharge_new" />
         <activity
             android:name=".ui.activities.AdminActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".ui.activities.LoginActivity"
             android:exported="false"
