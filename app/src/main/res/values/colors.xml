@@ -14,7 +14,7 @@
     <color name="third_color">#EDF6F9</color>
     <color name="fourth_color">#A8DADC</color>
     <color name="fifth_color">#457B9D</color>
-
+    <color name="google_color">#1a73e8</color>
 
     <color name="colorSnackBarError">#F72400</color>
     <color name="colorSnackBarSuccess">#8BC34A</color>

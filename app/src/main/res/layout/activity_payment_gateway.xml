@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1a73e8"
+    android:orientation="vertical"
+    tools:context=".ui.activities.PaymentGatewayActivity"
+    >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_payment"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:layout_marginLeft="120sp"
+        android:layout_marginTop="80sp"
+        android:src="@drawable/profile_img"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_payment" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="80sp"
+        android:layout_height="80sp"
+        android:layout_marginLeft="30sp"
+        android:layout_marginTop="65sp"
+        android:src="@mipmap/ic_launcher_foreground"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_payment" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8sp"
+        android:layout_marginTop="90sp"
+        android:src="@drawable/ic_baseline_arrow_forward"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_payment" />
+
+    <TextView
+        android:id="@+id/tv_bankDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Payment to EvoCharge \n (EvoCharge@axis) "
+        android:textColor="@color/white"
+        android:layout_marginTop="30sp"
+        android:textSize="15sp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+
+    <TextView
+        android:id="@+id/tv_total_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="₹ 501"
+        android:textColor="@color/white"
+        android:layout_marginTop="30sp"
+        android:textSize="40sp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_bankDetails" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Payment via Billdesk"
+        android:textColor="@color/white"
+        android:layout_marginTop="30sp"
+        android:textSize="15sp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_total_amount" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6sp"
+        android:layout_marginRight="6sp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/shape_bottom_sheet"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+            <ImageView
+                android:layout_width="30sp"
+                android:layout_height="30sp"
+                android:layout_margin="20sp"
+                android:src="@drawable/bank"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20sp"
+                android:layout_marginRight="40sp"
+                android:text="Your Bank  *****4321"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_gPay"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="7sp"
+            android:background="@drawable/gpay_button_background"
+            android:text="Proceed to pay"
+            android:textColor="@color/white"
+            android:paddingLeft="30sp"
+            android:paddingRight="30sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IN Partnership With Your Bank"
+            android:layout_marginBottom="10sp"
+            />
+
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

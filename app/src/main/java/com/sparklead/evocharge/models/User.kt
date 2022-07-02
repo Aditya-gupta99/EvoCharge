@@ -13,4 +13,5 @@ class User (
     val phone :String = "",
     val address :String = "",
     val profileCompleted:Int = 0
+
 ):Parcelable
