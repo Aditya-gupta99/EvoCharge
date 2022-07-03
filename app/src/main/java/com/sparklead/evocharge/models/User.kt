@@ -5,7 +5,6 @@ import kotlinx.android.parcel.Parcelize
 
 @Parcelize
 class User (
-
     val id: String = "",
     val name : String = "",
     val evModel :String ="",
@@ -13,5 +12,4 @@ class User (
     val phone :String = "",
     val address :String = "",
     val profileCompleted:Int = 0
-
 ):Parcelable

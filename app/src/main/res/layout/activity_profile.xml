@@ -138,11 +138,11 @@
             app:hintTextColor="@color/first_color">
 
             <EditText
-                android:id="@+id/et_Address"
+                android:id="@+id/et_Reg_No"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20sp"
-                android:hint="Enter Your Address"
+                android:hint="Enter Your Vehicle No"
                 android:imeOptions="actionGo"
                 android:inputType="text"
                 android:textSize="16sp" />

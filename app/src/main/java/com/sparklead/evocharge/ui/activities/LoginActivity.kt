@@ -24,6 +24,7 @@ class LoginActivity : BaseActivity() {
     lateinit var callbacks : PhoneAuthProvider.OnVerificationStateChangedCallbacks
     lateinit var storedVerificationId:String
     lateinit var resendToken: PhoneAuthProvider.ForceResendingToken
+    lateinit var user: User
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -141,6 +142,7 @@ class LoginActivity : BaseActivity() {
                     showErrorSnackBar("Signup Successfully",false)
                     if (task.isSuccessful){
 
+
                         Handler(Looper.getMainLooper()).postDelayed({
                             val intent = Intent(this, ProfileActivity::class.java)
                             startActivity(intent)
@@ -155,7 +157,6 @@ class LoginActivity : BaseActivity() {
                 } else {
 
                     hideProgressDialog()
-
                     // Sign in failed, display a message and update the UI
                     Log.w(TAG, "signInWithCredential:failure", task.exception)
                     if (task.exception is FirebaseAuthInvalidCredentialsException) {

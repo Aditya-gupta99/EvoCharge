@@ -3,6 +3,7 @@ package com.sparklead.evocharge.ui.activities
 import android.Manifest
 import android.content.Intent
 import android.content.pm.PackageManager
+import android.graphics.BitmapFactory
 import android.graphics.Color
 import android.location.Location
 import android.os.Build
@@ -16,16 +17,14 @@ import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import androidx.core.view.WindowCompat
 import com.google.android.gms.location.FusedLocationProviderClient
 import com.google.android.gms.location.LocationServices
 import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment
-import com.google.android.gms.maps.model.BitmapDescriptorFactory
-import com.google.android.gms.maps.model.LatLng
-import com.google.android.gms.maps.model.Marker
-import com.google.android.gms.maps.model.MarkerOptions
+import com.google.android.gms.maps.model.*
 import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.sparklead.evocharge.R
 import com.sparklead.evocharge.databinding.ActivityMapBinding
@@ -57,13 +56,9 @@ class MapActivity : BaseActivity(), OnMapReadyCallback ,GoogleMap.OnMarkerClickL
 
         fusedLocationClient = LocationServices.getFusedLocationProviderClient(this)
 
-
-        val w: Window = window
-        w.setFlags(
+        window.setFlags(
             WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,
             WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS)
-
-
     }
 
     private fun setUpMap() {
@@ -95,32 +90,24 @@ class MapActivity : BaseActivity(), OnMapReadyCallback ,GoogleMap.OnMarkerClickL
 
         val location = ArrayList<Locations>();
 
-         location.add(Locations(13.035675 , 77.5881522 , "Repairing Shop" , 100f))
-         location.add(Locations(12.9228712 , 77.5389588 , "Charging Station"  , 7.0f))
-        location.add(Locations(12.913229829112801 , 77.56733620562215 , "Charging Station" , 197f))
+         location.add(Locations(13.035675 , 77.5881522 , "Repairing Shop"))
+         location.add(Locations(12.9228712 , 77.5389588 , "Charging Station"))
+        location.add(Locations(12.913229829112801 , 77.56733620562215 , "Charging Station"))
 
 
         for (i in location)
         {
             val x = LatLng(i.lat,i.lng)
-            val icon = BitmapDescriptorFactory.defaultMarker(i.hue)
-            mMap.addMarker(MarkerOptions().position(x).icon(icon).title(i.station_type))
+            val mipmap = i.station_type == "Charging Station"
+            if(mipmap)
+            mMap.addMarker(MarkerOptions().position(x).icon(BitmapDescriptorFactory.fromBitmap(
+                BitmapFactory.decodeResource(resources, R.mipmap.ic_charging))).title(i.station_type))
+            else
+                mMap.addMarker(MarkerOptions().position(x).icon(BitmapDescriptorFactory.fromBitmap(
+                    BitmapFactory.decodeResource(resources, R.mipmap.ic_repair))).title(i.station_type))
+
             mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(x, 15f))
         }
-
-//        val location1 = LatLng(13.035675, 77.5881522)
-//        mMap.addMarker(MarkerOptions().position(location1).title("Repairing Shop"))
-//        mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(location1, 15f))
-//
-//
-//        val location2 = LatLng(12.9228712, 77.5389588)
-//        mMap.addMarker(MarkerOptions().position(location2).title("Charging Station"))
-//        mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(location1, 15f))
-//
-//
-//        val location3 = LatLng(12.913229829112801, 77.56733620562215)
-//        mMap.addMarker(MarkerOptions().position(location3).title("Charging Station"))
-//        mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(location1, 15f))
     }
 
     override fun onMapReady(googleMap: GoogleMap) {
@@ -128,8 +115,10 @@ class MapActivity : BaseActivity(), OnMapReadyCallback ,GoogleMap.OnMarkerClickL
 
         mMap.uiSettings.isZoomControlsEnabled = true
         mMap.setOnMarkerClickListener(this)
-        mMap.uiSettings.setAllGesturesEnabled(true)
 
+
+        mMap.uiSettings.setAllGesturesEnabled(true)
+        mMap.setMapStyle(MapStyleOptions.loadRawResourceStyle(this, R.raw.style_json))
         setUpMap()
     }
 
@@ -216,9 +205,9 @@ class MapActivity : BaseActivity(), OnMapReadyCallback ,GoogleMap.OnMarkerClickL
 
             btnProceed.setOnClickListener {
                 showProgressbar(resources.getString(R.string.please_wait))
-
                 Handler(Looper.getMainLooper()).postDelayed({
                     startActivity(Intent(this,PaymentGatewayActivity::class.java))
+                    hideProgressDialog()
                 },2000)
             }
 

@@ -9,8 +9,7 @@ class Locations(
 
     val lat: Double = 0.00,
     val lng: Double = 0.00,
-    val station_type: String ="",
-    val hue : Float = 0f
+    val station_type: String =""
 
 ):Parcelable
 

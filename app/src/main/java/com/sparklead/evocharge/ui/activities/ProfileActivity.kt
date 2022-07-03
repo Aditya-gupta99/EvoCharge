@@ -23,7 +23,6 @@ class ProfileActivity : BaseActivity() {
         }
 
 
-
         btn_profile.setOnClickListener {
             if (validateUserProfileDetails()){
                 showProgressbar(resources.getString(R.string.please_wait))
@@ -37,11 +36,11 @@ class ProfileActivity : BaseActivity() {
     private fun validateUserProfileDetails(): Boolean {
         return when {
             TextUtils.isEmpty(et_full_name_profile.text.toString().trim { it <= ' ' }) -> {
-                showErrorSnackBar("Enter your mobile number", true)
+                showErrorSnackBar("Enter your Full name", true)
                 false
             }
-            TextUtils.isEmpty(et_Address.text.toString().trim { it <= ' ' }) -> {
-                showErrorSnackBar("Enter your mobile number", true)
+            TextUtils.isEmpty(et_Reg_No.text.toString().trim { it <= ' ' }) -> {
+                showErrorSnackBar("Enter your Reg No ", true)
                 false
             }
             TextUtils.isEmpty(et_mobile_no.text.toString().trim { it <= ' ' }) -> {
@@ -49,11 +48,11 @@ class ProfileActivity : BaseActivity() {
                 false
             }
             TextUtils.isEmpty(et_ev_model_profile.text.toString().trim { it <= ' ' }) -> {
-                showErrorSnackBar("Enter your mobile number", true)
+                showErrorSnackBar("Enter your Model Name", true)
                 false
             }
             TextUtils.isEmpty(et_email_profile.text.toString().trim { it <= ' ' }) -> {
-                showErrorSnackBar("Enter your mobile number", true)
+                showErrorSnackBar("Enter your email address", true)
                 false
             }
             else->{
@@ -70,7 +69,7 @@ class ProfileActivity : BaseActivity() {
         val evModel = et_ev_model_profile.text.toString().trim{it <= ' '}
         val email = et_email_profile.text.toString().trim{it <= ' '}
         val phone = et_mobile_no.text.toString().trim{it <= ' '}
-        val address = et_Address.text.toString().trim{it <= ' '}
+        val address = et_Reg_No.text.toString().trim{it <= ' '}
 
 
         userHashMap[Constants.FULL_NAME]=name

@@ -1,6 +1,8 @@
 package com.sparklead.evocharge.ui.activities
 
 import android.app.Dialog
+import android.graphics.Color
+import android.graphics.drawable.ColorDrawable
 import android.os.Handler
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -42,8 +44,7 @@ open class BaseActivity: AppCompatActivity() {
         The resource will be inflamed , adding all top-level views to the screen. */
 
         mProgressDialog.setContentView(R.layout.dialog_progress)
-
-        mProgressDialog.tv_progress_text.text = text
+        mProgressDialog.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
 
         mProgressDialog.setCancelable(false)
         mProgressDialog.setCanceledOnTouchOutside(false)
