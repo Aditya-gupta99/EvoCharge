@@ -7,6 +7,7 @@
         <entry key="..\:/Users/91914/AndroidStudioProjects/EvoCharge/app/src/main/res/drawable-v24/default_background_for_text.xml" value="0.2265" />
         <entry key="..\:/Users/91914/AndroidStudioProjects/EvoCharge/app/src/main/res/drawable-v24/ic_vector_dashboard.xml" value="0.2265" />
         <entry key="..\:/Users/91914/AndroidStudioProjects/EvoCharge/app/src/main/res/drawable-v24/item_grey_border_background.xml" value="0.2265" />
+        <entry key="..\:/Users/91914/AndroidStudioProjects/EvoCharge/app/src/main/res/drawable-v24/orange_background.xml" value="0.2115" />
         <entry key="..\:/Users/91914/AndroidStudioProjects/EvoCharge/app/src/main/res/drawable/background_circular.xml" value="0.2265" />
         <entry key="..\:/Users/91914/AndroidStudioProjects/EvoCharge/app/src/main/res/drawable/circle_dialog.xml" value="0.2115" />
         <entry key="..\:/Users/91914/AndroidStudioProjects/EvoCharge/app/src/main/res/drawable/circular_button_background.xml" value="0.2265" />
@@ -29,13 +30,14 @@
         <entry key="..\:/Users/91914/AndroidStudioProjects/EvoCharge/app/src/main/res/layout/activity_payment_gateway.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/91914/AndroidStudioProjects/EvoCharge/app/src/main/res/layout/activity_profile.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/91914/AndroidStudioProjects/EvoCharge/app/src/main/res/layout/activity_report.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/91914/AndroidStudioProjects/EvoCharge/app/src/main/res/layout/activity_sign_up.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/91914/AndroidStudioProjects/EvoCharge/app/src/main/res/layout/activity_splash_screen.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/91914/AndroidStudioProjects/EvoCharge/app/src/main/res/layout/app_bar_dashboard.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/91914/AndroidStudioProjects/EvoCharge/app/src/main/res/layout/app_bar_user.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/91914/AndroidStudioProjects/EvoCharge/app/src/main/res/layout/app_bar_user2.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/91914/AndroidStudioProjects/EvoCharge/app/src/main/res/layout/book_sheet_dialog.xml" value="0.264" />
         <entry key="..\:/Users/91914/AndroidStudioProjects/EvoCharge/app/src/main/res/layout/bottom_sheet_dialog.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/91914/AndroidStudioProjects/EvoCharge/app/src/main/res/layout/content_dashboard.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/91914/AndroidStudioProjects/EvoCharge/app/src/main/res/layout/content_dashboard.xml" value="0.1" />
         <entry key="..\:/Users/91914/AndroidStudioProjects/EvoCharge/app/src/main/res/layout/content_user.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/91914/AndroidStudioProjects/EvoCharge/app/src/main/res/layout/content_user2.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/91914/AndroidStudioProjects/EvoCharge/app/src/main/res/layout/dialog_progress.xml" value="0.25416666666666665" />

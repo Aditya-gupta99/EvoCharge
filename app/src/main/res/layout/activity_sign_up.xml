@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".ui.activities.LoginActivity"
+    tools:context=".ui.activities.SignUpActivity"
     android:background="#e9f5fc">
 
     <ScrollView
@@ -20,28 +20,56 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:gravity="center"
-            >
+            android:gravity="center">
 
             <ImageView
                 android:id="@+id/imageView2"
+                android:layout_marginTop="40sp"
                 android:layout_width="match_parent"
                 android:layout_height="300sp"
-                android:layout_marginTop="40sp"
-                app:srcCompat="@drawable/signin" />
+                app:srcCompat="@drawable/signup" />
 
             <TextView
                 android:id="@+id/textView4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="SIGN IN"
-                android:layout_marginBottom="14sp"
+                android:layout_marginBottom="15dp"
+                android:text="Sign Up"
                 android:textAlignment="center"
                 android:textColor="#fe5b52"
                 android:textSize="30sp"
                 android:textStyle="bold" />
 
 
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30sp"
+                android:layout_marginRight="30sp"
+                android:layout_marginTop="20sp"
+                android:textColor="#4063d7"
+                app:hintAnimationEnabled="true"
+                app:startIconDrawable="@drawable/ic_baseline_person_24"
+                android:textColorHint="#4063d7"
+                app:endIconMode="clear_text"
+                app:endIconTint="#4063d7"
+                app:startIconTint="#4063d7"
+                app:boxStrokeColor="#4063d7"
+                app:hintTextColor="#4063d7">
+
+                <EditText
+                    android:id="@+id/et_name_signup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Name"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="20sp"
+                    android:imeOptions="actionGo"
+                    android:cursorVisible="true"
+                    android:inputType="textPersonName" />
+            </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -61,7 +89,7 @@
                 app:hintTextColor="#4063d7">
 
                 <EditText
-                    android:id="@+id/et_email_signTn"
+                    android:id="@+id/et_email_signup"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Email"
@@ -92,7 +120,7 @@
                 app:hintTextColor="#4063d7">
 
                 <EditText
-                    android:id="@+id/et_password_signIn"
+                    android:id="@+id/et_password_signup"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Password"
@@ -104,42 +132,46 @@
                     android:inputType="textWebPassword"/>
             </com.google.android.material.textfield.TextInputLayout>
 
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                >
-                <TextView
-                    android:layout_width="0sp"
+                android:gravity="center_horizontal"
+                android:layout_marginLeft="30sp"
+                android:layout_marginRight="30sp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:id="@+id/cb_terms_and_condition"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1.5"
-                    android:layout_marginTop="16dp"
-                    android:text="Forget your Password?"
-                    android:textAlignment="textEnd"
-                    android:textSize="16sp" />
+                    android:buttonTint="#4063d7"
+                    android:checked="false"/>
 
                 <TextView
-                    android:id="@+id/tv_forget_password"
-                    android:layout_width="0sp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:layout_marginTop="16dp"
-                    android:text="Recover it"
-                    android:paddingLeft="10sp"
+                    android:textSize="16sp"
+                    android:text="I Agree To The"/>
+
+                <TextView
+                    android:id="@+id/tv_register_terms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:text="Term and conditions"
+                    android:textAllCaps="false"
                     android:textColor="#4063d7"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
             </LinearLayout>
 
-
-
-
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btn_signIn"
+                android:id="@+id/btn_signUp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/orange_background"
-                android:text="Sign In"
+                android:text="Sign Up"
                 android:textAllCaps="false"
                 android:textColor="@color/white"
                 android:textSize="20sp"
@@ -147,36 +179,8 @@
                 android:paddingRight="30sp"
                 android:paddingTop="12sp"
                 android:paddingBottom="12sp"
-                android:layout_marginTop="20sp"
+                android:layout_marginTop="10sp"
                 />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                >
-                <TextView
-                    android:layout_width="0sp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1.5"
-                    android:layout_marginTop="16dp"
-                    android:text="Don't have an account? "
-                    android:textAlignment="center"
-                    android:textSize="16sp" />
-
-            </LinearLayout>
-            <TextView
-                android:id="@+id/tv_signUp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Sign Up"
-                android:paddingLeft="10sp"
-                android:textColor="#4063d7"
-                android:textAlignment="center"
-                android:textSize="16sp" />
         </LinearLayout>
-
-
-
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

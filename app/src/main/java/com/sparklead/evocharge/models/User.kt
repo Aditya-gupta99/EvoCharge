@@ -10,6 +10,6 @@ class User (
     val evModel :String ="",
     val email :String = "",
     val phone :String = "",
-    val address :String = "",
+    val RegNo :String = "",
     val profileCompleted:Int = 0
 ):Parcelable

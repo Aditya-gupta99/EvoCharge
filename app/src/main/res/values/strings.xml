@@ -30,4 +30,11 @@
     <string name="slot2"><b>Slot-2</b> \n\n 11:00AM \n-\n 1:00PM</string>
     <string name="slot3"><b>Slot-3</b> \n\n 3:00PM  \n-\n 6:00PM</string>
     <string name="slot4"><b>Slot-4</b> \n\n 7:00PM \n-\n 10:00PM</string>
+
+
+    <string name="err_msg_first_name">Please enter your full name. </string>
+    <string name="err_msg_email">Please enter your email. </string>
+    <string name="err_msg_password">Please enter password. </string>
+    <string name="err_msg_password_confirm">Password and confirm password not matched.</string>
+    <string name="err_msg_agree">Please agree terms and condition</string>
 </resources>
